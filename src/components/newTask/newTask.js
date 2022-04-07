@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../redux/taskSlice";
+import "./NewTask.css";
+import { Form } from "react-bootstrap";
 
 const NewTask = () => {
   const [newTask, setNewTask] = useState("");
@@ -16,17 +18,22 @@ const NewTask = () => {
   };
 
   return (
-    <form onSubmit={inputTask}>
-      <label>Please Enter a Task</label>
-      <input
+    <Form onSubmit={inputTask}>
+      <h1>
+        <Form.Label>Enter a New Task! :)</Form.Label>
+      </h1>
+      <p></p>
+      <Form.Control
         type="text"
         placeholder="New Task!"
         value={newTask}
         onChange={(event) => setNewTask(event.target.value)}
-      ></input>
+      ></Form.Control>
 
-      <button type="submit">Submit</button>
-    </form>
+      <button type="submit" className="TaskButton">
+        Submit
+      </button>
+    </Form>
   );
 };
 

@@ -26,6 +26,8 @@ function Body(props) {
     <div>
       <nav class="navbar">
         <span class="diamonds">
+          {" "}
+          {/* little diamond icons  */}
           {diamond}
           {diamond}
           {diamond}
@@ -41,8 +43,9 @@ function Body(props) {
         <p></p>
         <Card className="Input-Card">
           <Card.Header className="Input-Header">To Do List</Card.Header>
-          <NewTask />
-        </Card>
+          <NewTask /> {/* input componenet */}
+        </Card>{" "}
+        {/* list component  */}
       </div>
       <List />
     </div>

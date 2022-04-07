@@ -8,10 +8,12 @@ const ListItem = ({ id, task, completed }) => {
   const dispatch = useDispatch();
 
   const completeButton = () => {
+    //change complete status
     dispatch(changeStatus({ id: id, completed: !completed }));
   };
 
   const deleteButton = () => {
+    //delete a task
     dispatch(deleteTask({ id: id }));
   };
 
