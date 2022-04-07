@@ -1,12 +1,16 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { changeStatus } from "../../redux/taskSlice";
+import { changeStatus, deleteTask } from "../../redux/taskSlice";
 
 const ListItem = ({ id, task, completed }) => {
   const dispatch = useDispatch();
 
   const completeButton = () => {
     dispatch(changeStatus({ id: id, completed: !completed }));
+  };
+
+  const deleteButton = () => {
+    dispatch(deleteTask({ id: id }));
   };
 
   return (
@@ -17,7 +21,7 @@ const ListItem = ({ id, task, completed }) => {
         onChange={completeButton}
       ></input>
       {task}
-      <button>Delete</button>
+      <button onClick={deleteButton}>Delete</button>
     </div>
   );
 };

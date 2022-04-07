@@ -16,9 +16,12 @@ const taskSlice = createSlice({
       const index = state.findIndex((tasks) => tasks.id === action.payload.id);
       state[index].completed = action.payload.completed;
     },
+    deleteTask: (state, action) => {
+      return state.filter((tasks) => tasks.id !== action.payload.id);
+    },
   },
 });
 
-export const { addTask, changeStatus } = taskSlice.actions;
+export const { addTask, changeStatus, deleteTask } = taskSlice.actions;
 
 export default taskSlice.reducer;
