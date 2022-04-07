@@ -7,6 +7,7 @@ const NewTask = () => {
   const dispatch = useDispatch();
 
   const inputTask = (event) => {
+    event.preventDefault();
     dispatch(
       addTask({
         task: newTask,

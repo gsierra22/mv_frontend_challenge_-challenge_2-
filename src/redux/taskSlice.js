@@ -12,9 +12,13 @@ const taskSlice = createSlice({
       };
       state.push(newTask);
     },
+    changeStatus: (state, action) => {
+      const index = state.findIndex((tasks) => tasks.id === action.payload.id);
+      state[index].completed = action.payload.completed;
+    },
   },
 });
 
-export const { addTask } = taskSlice.actions;
+export const { addTask, changeStatus } = taskSlice.actions;
 
 export default taskSlice.reducer;
