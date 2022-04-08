@@ -3,6 +3,7 @@
 - Run `npm install react-bootstrap` (for some reason the app can not compile if this is not installed)
 -Run `npm start`
 - Navigate to `localhost:3000`
+-I have also deployed the app to heroku at this link: https://redux-to-do-lis.herokuapp.com/
 
 ## To Do List
 
@@ -21,7 +22,8 @@ CSS,
 HTML,
 Boostrap,
 React,
-Redux
+Redux,
+Heroku
 
 ### Issues
 For some reason the app requires running npm install react-bootstrap. It had difficulty compiling when I made the app. I also tried installing a drag and drop feature on this app but I kept getting the error spec.type must be defined in react-dnd. I tried looking online for a solution and following videos. I have decided that I will attempt a drag and drop on a different app. Overall I enjoyed this and thought it was a good way to refresh on redux.
