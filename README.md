@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+## Installation
+- Run `npm install`
+- Run `npm install react-bootstrap` (for some reason the app can not compile if this is not installed)
+-Run `npm start`
+- Navigate to `localhost:3000`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## To Do List
 
-## Available Scripts
+In this simple App I user can view a list of tasks they need to complete, add new tasks, mark tasks as completed, and delete them afterwards. I remade this app in react from it's original version using JQuery. The original can be viewed at the following link: https://github.com/gsierra22/weekend-sql-to-do-list. I eventually remade it using express and postgresSQL. It can be view here: https://github.com/gsierra22/to-do-list-updated . This is my third time making it and this time it usuallys react-redux in order to save and modify data.
 
-In the project directory, you can run:
+## Prerequisites
 
-### `npm start`
+Before you get started, make sure you have the following software installed on your computer:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Nodemon](https://nodemon.io/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies
 
-### `npm test`
+Javascript,
+CSS,
+HTML,
+Boostrap,
+React,
+Redux
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Issues
+For some reason the app requires running npm install react-bootstrap. It had difficulty compiling when I made the app. I also tried installing a drag and drop feature on this app but I kept getting the error spec.type must be defined in react-dnd. I tried looking online for a solution and following videos. I have decided that I will attempt a drag and drop on a different app. Overall I enjoyed this and thought it was a good way to refresh on redux.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
