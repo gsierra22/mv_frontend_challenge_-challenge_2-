@@ -8,7 +8,7 @@ const List = (props) => {
 
   return (
     <div>
-      <h1>My Tasks!</h1>
+      <h1 className="header">My Tasks!</h1>
       <div className="List-Card">
         {/* map through listItem */}
         {tasks.map((tasks) => (

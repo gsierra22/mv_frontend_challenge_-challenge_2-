@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,  } from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../redux/taskSlice";
 import "./NewTask.css";
@@ -15,6 +15,7 @@ const NewTask = () => {
         task: newTask,
       })
     );
+    setNewTask('')
   };
 
   return (
@@ -29,10 +30,15 @@ const NewTask = () => {
         value={newTask}
         onChange={(event) => setNewTask(event.target.value)}
       ></Form.Control>
-
-      <button type="submit" className="TaskButton">
+      <div>
+        {!newTask ?
+      <button disabled type="submit" className="dis">
         Submit
-      </button>
+      </button>:
+      <button type="submi" className="TaskButton">
+        Submit
+      </button>}
+      </div>
     </Form>
   );
 };

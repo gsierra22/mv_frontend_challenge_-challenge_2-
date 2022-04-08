@@ -3,9 +3,16 @@
   font-size: small;
   min-height: 50px;
   min-width: 100px;
+  border: none;
 }
 
 .TaskButton:hover {
   background-color: #0d2bd3;
   color: white;
+}
+.dis{
+  border-radius: 25px;
+  font-size: small;
+  min-height: 50px;
+  min-width: 100px;
 }

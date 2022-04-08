@@ -11,8 +11,9 @@
   min-width: 120px;
   min-height: 150px;
   max-width: 185px;
-  max-height: 258px;
+  max-height: 500px;
   border-radius: 10%;
+  overflow: hidden;
 }
 
 .Header {
@@ -25,6 +26,7 @@
   font-size: small;
   min-height: 50px;
   min-width: 100px;
+  border: none;
 }
 
 .ItemButton:hover {
